@@ -1,4 +1,5 @@
-<table>
+<!-- ngFor added but still needs work done possibly in wrong area or maybe displayList is wrong -->
+<table *ngFor="let satelliteData of displayList">
     <tr class="header-row">
         <th (click)="sort('name')" class="sortable">Name</th>
         <th (click)="sort('type')" class="sortable">Type</th>
@@ -6,7 +7,7 @@
         <th>Orbit Type</th>
         <th>Launch Date</th>
     </tr>
-    <tr class="data-row">
+    <tr class="data-row" >
         <td>GPS 938</td>
         <td>Positioning</td>
         <td>true</td>
