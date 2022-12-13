@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component} from '@angular/core';
 import { Satellite } from './satellite';
+
 
 @Component({
   selector: 'app-root',
@@ -36,6 +37,9 @@ export class AppComponent {
 		}.bind(this));
 
 	}
+	ngOnInit() {
+		
+	}
 
 	search(searchTerm: string): void {
 		let matchingSatellites: Satellite[] = [];
@@ -51,5 +55,5 @@ export class AppComponent {
 		this.displayList = matchingSatellites;
 	}
 
-
+ 
 }
